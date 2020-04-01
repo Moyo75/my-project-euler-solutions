@@ -9,7 +9,7 @@ function fiboEvenSum(n) {
     arr1[i] = arr1[i - 1] + arr1[i - 2];
   }
 
-  //console.log(arr1);
+  //console.log(arr1); Original fibonacci series
 
   evenArr = arr1
     .filter(x => x <= n)
