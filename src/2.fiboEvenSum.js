@@ -1,6 +1,6 @@
 function fiboEvenSum(n) {
-  let arr1 = [],
-    evenArr = [];
+  const arr1 = [];
+  let evenArr = [];
 
   arr1[0] = 0;
   arr1[1] = 1;
@@ -9,11 +9,11 @@ function fiboEvenSum(n) {
     arr1[i] = arr1[i - 1] + arr1[i - 2];
   }
 
-  //console.log(arr1); Original fibonacci series
+  // console.log(arr1); Original fibonacci series
 
   evenArr = arr1
-    .filter(x => x <= n)
-    .filter(x => x % 2 === 0)
+    .filter((x) => x <= n)
+    .filter((x) => x % 2 === 0)
     .reduce((x, y) => x + y);
 
   return evenArr;

@@ -1,14 +1,15 @@
 function largestPrimeFactor(number) {
-  let primeArr = [],
-    divisor = 2,
-    largest;
+  const primeArr = [];
+  let largest = 0;
+  let divisor = 2;
+  let paramNum = number;
 
-  while (number >= 2) {
-    if (number % divisor === 0) {
+  while (paramNum >= 2) {
+    if (paramNum % divisor === 0) {
       primeArr.push(divisor);
-      number = number / divisor;
+      paramNum /= divisor;
     } else {
-      divisor++;
+      divisor += 1;
     }
   }
 

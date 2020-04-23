@@ -1,3 +1,19 @@
+/**
+ * Calculate .
+ *
+ * @param n
+ * @return {number}
+ */
+
+const primeChecker = (number) => {
+  for (let i = 3; i <= Math.sqrt(number); i += 2) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
 function primeSummation(n) {
   let primeSum = 0;
 
@@ -10,14 +26,5 @@ function primeSummation(n) {
 
   return primeSum + 1;
 }
-
-const primeChecker = (number) => {
-  for (let i = 3; i <= Math.sqrt(number); i += 2) {
-    if (number % i === 0) {
-      return false;
-    }
-  }
-  return true;
-};
 
 console.log(primeSummation(2000000));

@@ -1,0 +1,46 @@
+{
+  "name": "project-euler",
+  "version": "0.0.1",
+  "description": "solving problems using javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./src/*",
+    "ci": "npm run lint && npm run test -- --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moyo75/my-project-euler-solutions.git"
+  },
+  "keywords": [
+    "computer-science",
+    "algorithms",
+    "cs",
+    "javascript",
+    "data-structures",
+    "algorithm",
+    "javascript-algorithms",
+    "mathematics",
+    "math",
+    "logic"
+  ],
+  "author": "John Ademoye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moyo75/my-project-euler-solutions/issues"
+  },
+  "homepage": "https://github.com/Moyo75/my-project-euler-solutions#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@types/jest": "^24.0.15",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "jest": "^25.4.0"
+  }
+}

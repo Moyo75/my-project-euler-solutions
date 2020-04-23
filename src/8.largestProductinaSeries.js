@@ -1,5 +1,5 @@
 function largestProductinaSeries(n) {
-  let thousandDigits = [
+  const thousandDigits = [
     7,
     3,
     1,
@@ -1001,16 +1001,18 @@ function largestProductinaSeries(n) {
     5,
     0,
   ];
-  let product,
-    highest = 0,
-    j = 0,
-    minArray,
-    position = 1,
-    index = n;
-  highestArray = [];
+
+  let product = null;
+  let highest = null;
+  let minArray = null;
+  let j = 0;
+  let position = 1;
+  let index = n;
+  let highestArray = [];
 
   while (index < thousandDigits.length) {
-    (minArray = []), (product = 1);
+    minArray = [];
+    product = 1;
 
     for (let i = index - n; i < index; i++) {
       minArray.push(thousandDigits[i]);
@@ -1030,7 +1032,7 @@ function largestProductinaSeries(n) {
   }
 
   console.log(
-    `Highest product is ${highest} at ${position} with array [${highestArray}].`
+    `Highest product is ${highest} at ${position} with array [${highestArray}].`,
   );
 
   return highest;
